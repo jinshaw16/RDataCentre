@@ -12,7 +12,7 @@ This dataset involves LD of GWAS Catalog SNPs calculated by PLINK based on the p
 }
 
 \value{
-    a list of sparse Matrix of class "dgCMatrix". Each list represents one of 26 populations and 4 super populations, containing sparse matrix of GWAS Catalog SNPs (rows) and LD SNPs (columns). Explanations for population code can be found at \url{http://www.1000genomes.org/faq/which-populations-are-part-your-study}.
+    a list of sparse Matrix of class "dgCMatrix". Each list represents one of 26 populations and 4 super populations, containing sparse matrix of GWAS Catalog SNPs (rows) and LD SNPs (columns). Non-zero values indicate r2 (only those no less than 0.8). Explanations for population code can be found at \url{http://www.1000genomes.org/faq/which-populations-are-part-your-study}.
 }
 
 \references{
