@@ -4,7 +4,7 @@
 \title{Table S3A for trans-eQTLs among complete datasets from Benjamin et al. (2014)}
 
 \usage{
-JKscience_TS3A <- uRDataLoader(RData='JKscience_TS3A')
+JKscience_TS3A <- uRDataLoader(RData.customised='JKscience_TS3A')
 }
 
 \description{
@@ -22,6 +22,6 @@ Fairfax et al. (2014). Innate immune activity conditions the effect of regulator
 \keyword{datasets}
 
 \examples{
-JKscience_TS3A <- uRDataLoader(RData='JKscience_TS3A')
+JKscience_TS3A <- uRDataLoader(RData.customised='JKscience_TS3A')
 JKscience_TS3A[1:5,]
 }

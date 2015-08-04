@@ -4,7 +4,7 @@
 \title{Table S2A for cis-eQTLs among shared datasets from Benjamin et al. (2014)}
 
 \usage{
-JKscience_TS2A <- uRDataLoader(RData='JKscience_TS2A')
+JKscience_TS2A <- uRDataLoader(RData.customised='JKscience_TS2A')
 }
 
 \description{
@@ -22,6 +22,6 @@ Fairfax et al. (2014). Innate immune activity conditions the effect of regulator
 \keyword{datasets}
 
 \examples{
-JKscience_TS2A <- uRDataLoader(RData='JKscience_TS2A')
+JKscience_TS2A <- uRDataLoader(RData.customised='JKscience_TS2A')
 JKscience_TS2A[1:5,]
 }
