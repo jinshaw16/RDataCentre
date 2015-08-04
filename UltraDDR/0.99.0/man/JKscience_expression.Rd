@@ -18,8 +18,6 @@ This dataset involves 228 individuals with expression data for all four conditio
         \item{\code{probeInfo}: a list of 2 components, both storing probe information including their genomic locations. The component \code{JKscience_expression$probeInfo$Info} contains a data frame, the second \code{JKscience_expression$probeInfo$GR} is an object of class "GRanges"}
         \item{\code{demoInfo}: a data frame containing demographics information about individuals}
     }
-    
-     frame. It has the following columns: "variant" (cis-eQTLs), "ArrayAddress" (illuminaHumanv4), "GeneID" (Entrez GeneID), "Symbol" (gene symbol), "Naive_t" (test statistic for naive samples), "LPS2_t", "LPS24_t", "IFN_t", "Naive_fdr" (FDR for naive samples), "LPS2_fdr", "LPS24_fdr" and "IFN_fdr".
 }
 
 \references{
