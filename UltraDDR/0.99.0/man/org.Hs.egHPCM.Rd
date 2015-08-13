@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egHPCM <- dRDataLoader(RData='org.Hs.egHPCM')
+org.Hs.egHPCM <- uRDataLoader(RData='org.Hs.egHPCM')
 }
 
 \description{
@@ -27,6 +27,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-org.Hs.egHPCM <- dRDataLoader(RData='org.Hs.egHPCM')
+org.Hs.egHPCM <- uRDataLoader(RData='org.Hs.egHPCM')
 names(org.Hs.egHPCM)
 }

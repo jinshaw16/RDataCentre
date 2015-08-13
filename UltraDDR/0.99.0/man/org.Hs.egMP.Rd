@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egMP <- dRDataLoader(RData='org.Hs.egMP')
+org.Hs.egMP <- uRDataLoader(RData='org.Hs.egMP')
 }
 
 \description{
@@ -29,6 +29,6 @@ Sayers et al. (2011) Database resources of the National Center for Biotechnology
 \keyword{datasets}
 
 \examples{
-org.Hs.egMP <- dRDataLoader(RData='org.Hs.egMP')
+org.Hs.egMP <- uRDataLoader(RData='org.Hs.egMP')
 names(org.Hs.egMP)
 }

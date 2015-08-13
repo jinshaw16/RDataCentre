@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.EF <- dRDataLoader(RData='ig.EF')
+ig.EF <- uRDataLoader(RData='ig.EF')
 }
 
 \description{
@@ -28,6 +28,6 @@ Malone et al. (2010) Modeling sample variables with an Experimental Factor Ontol
 \keyword{datasets}
 
 \examples{
-ig.EF <- dRDataLoader(RData='ig.EF')
+ig.EF <- uRDataLoader(RData='ig.EF')
 ig.EF
 }

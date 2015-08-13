@@ -28,6 +28,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-ig.HPPA <- dRDataLoader(RData='ig.HPPA')
+ig.HPPA <- uRDataLoader(RData='ig.HPPA')
 ig.HPPA
 }
