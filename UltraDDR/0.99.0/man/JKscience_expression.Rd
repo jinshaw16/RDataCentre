@@ -8,7 +8,7 @@ JKscience_expression <- uRDataLoader(RData.customised='JKscience_expression')
 }
 
 \description{
-This dataset involves 228 individuals with expression data for all four conditions/contexts, that is, in the naive state (CD14), after 2-hour LPS (LPS2), after 24-hour LPS (LPS24), and after exposure to IFN (IFN). Also included are the probe information and the demographics information about individuals. For genotype data for these individuals, please refer to \code{\link{JKscience_genotype}}
+This dataset involves 228 individuals with expression data for all four conditions/contexts, that is, in the naive state (CD14), after 2-hour LPS (LPS2), after 24-hour LPS (LPS24), and after exposure to IFN (IFN). Also included are the probe information and the demographics information about individuals. For genotype data for these individuals, please refer to \code{\link{JKscience_genotype}}.
 }
 
 \value{

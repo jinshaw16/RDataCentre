@@ -8,11 +8,11 @@ GWAS_LD <- uRDataLoader(RData='GWAS_LD')
 }
 
 \description{
-This dataset involves LD of GWAS Catalog SNPs calculated by PLINK based on the phase 3 1000 Genomics Project data.
+This dataset involves LD of GWAS Catalog SNPs calculated by PLINK based on the 1000 Genomics Project data (phase 3).
 }
 
 \value{
-    a list of sparse Matrix of class "dgCMatrix". Each list represents one of 26 populations and 4 super populations, containing sparse matrix of GWAS Catalog SNPs (rows) and LD SNPs (columns). Non-zero values indicate r2 (only those no less than 0.8). Explanations for population code can be found at \url{http://www.1000genomes.org/faq/which-populations-are-part-your-study}.
+    a list of sparse Matrix of class "dgCMatrix". Each list represents one of 26 populations and 5 super populations, containing sparse matrix of GWAS Catalog SNPs (rows) and LD SNPs (columns). Non-zero values indicate r2 (only those no less than 0.8). The population include 5 super populations ("AFR", "AMR", "EAS", "EUR", "SAS") and 26 populations ("ACB", "ASW", "BEB", "CDX", "CEU", "CHB", "CHS", "CLM", "ESN", "FIN", "GBR", "GIH", "GWD", "IBS", "ITU", "JPT", "KHV", "LWK", "MSL", "MXL", "PEL", "PJL", "PUR", "STU", "TSI", "YRI"). Explanations for population code can be found at \url{http://www.1000genomes.org/faq/which-populations-are-part-your-study}.
 }
 
 \references{

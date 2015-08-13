@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.HPCM <- uRDataLoader(RData='ig.HPCM')
+ig.HPCM <- dRDataLoader(RData='ig.HPCM')
 }
 
 \description{
@@ -28,6 +28,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-ig.HPCM <- uRDataLoader(RData='ig.HPCM')
+ig.HPCM <- dRDataLoader(RData='ig.HPCM')
 ig.HPCM
 }

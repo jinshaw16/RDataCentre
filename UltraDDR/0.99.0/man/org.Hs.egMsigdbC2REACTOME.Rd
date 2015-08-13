@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egMsigdbC2REACTOME <- uRDataLoader(RData='org.Hs.egMsigdbC2REACTOME')
+org.Hs.egMsigdbC2REACTOME <- dRDataLoader(RData='org.Hs.egMsigdbC2REACTOME')
 }
 
 \description{
@@ -27,6 +27,6 @@ Subramanian et al. (2005) Gene set enrichment analysis: a knowledge-based approa
 \keyword{datasets}
 
 \examples{
-org.Hs.egMsigdbC2REACTOME <- uRDataLoader(RData='org.Hs.egMsigdbC2REACTOME')
+org.Hs.egMsigdbC2REACTOME <- dRDataLoader(RData='org.Hs.egMsigdbC2REACTOME')
 names(org.Hs.egMsigdbC2REACTOME)
 }
