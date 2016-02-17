@@ -4,7 +4,7 @@
 \title{Immune-disease associated variants, regions and genes from ImmunoBase (hg19)}
 
 \usage{
-ImmunoBase <- xRDataLoader(xRDataLoader='ImmunoBase')
+ImmunoBase <- xRDataLoader(RData.customised='ImmunoBase')
 }
 
 \description{
@@ -25,7 +25,7 @@ This dataset contains data obtained from ImmunoBase. For each of 20 immune-disea
 \keyword{datasets}
 
 \examples{
-ImmunoBase <- xRDataLoader(xRDataLoader='ImmunoBase')
+ImmunoBase <- xRDataLoader(RData.customised='ImmunoBase')
 names(ImmunoBase)
 str(ImmunoBase$AS)
 ImmunoBase$AS$disease
