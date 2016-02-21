@@ -28,7 +28,7 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-#ig.HPMA <- uRDataLoader(RData='ig.HPMA')
+#ig.HPMA <- dRDataLoader(RData='ig.HPMA')
 data(ig.HPMA)
 ig.HPMA
 }

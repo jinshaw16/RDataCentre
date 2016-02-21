@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.GOMF <- uRDataLoader(RData='ig.GOMF')
+ig.GOMF <- dRDataLoader(RData='ig.GOMF')
 }
 
 \description{
@@ -28,6 +28,6 @@ Ashburner et al. (2000) Gene ontology: tool for the unification of biology. \emp
 \keyword{datasets}
 
 \examples{
-ig.GOMF <- uRDataLoader(RData='ig.GOMF')
+ig.GOMF <- dRDataLoader(RData='ig.GOMF')
 ig.GOMF
 }

@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.MP <- uRDataLoader(RData='ig.MP')
+ig.MP <- dRDataLoader(RData='ig.MP')
 }
 
 \description{
@@ -28,6 +28,6 @@ Smith et al. (2009) The Mammalian Phenotype Ontology: enabling robust annotation
 \keyword{datasets}
 
 \examples{
-ig.MP <- uRDataLoader(RData='ig.MP')
+ig.MP <- dRDataLoader(RData='ig.MP')
 ig.MP
 }

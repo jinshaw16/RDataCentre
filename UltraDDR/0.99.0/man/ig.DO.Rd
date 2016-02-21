@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.DO <- uRDataLoader(RData='ig.DO')
+ig.DO <- dRDataLoader(RData='ig.DO')
 }
 
 \description{
@@ -28,6 +28,6 @@ Schriml et al. (2012) Disease Ontology: a backbone for disease semantic integrat
 \keyword{datasets}
 
 \examples{
-ig.DO <- uRDataLoader(RData='ig.DO')
+ig.DO <- dRDataLoader(RData='ig.DO')
 ig.DO
 }

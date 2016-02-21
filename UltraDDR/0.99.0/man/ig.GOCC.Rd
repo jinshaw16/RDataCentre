@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.GOCC <- uRDataLoader(RData='ig.GOCC')
+ig.GOCC <- dRDataLoader(RData='ig.GOCC')
 }
 
 \description{
@@ -28,6 +28,6 @@ Ashburner et al. (2000) Gene ontology: tool for the unification of biology. \emp
 \keyword{datasets}
 
 \examples{
-ig.GOCC <- uRDataLoader(RData='ig.GOCC')
+ig.GOCC <- dRDataLoader(RData='ig.GOCC')
 ig.GOCC
 }

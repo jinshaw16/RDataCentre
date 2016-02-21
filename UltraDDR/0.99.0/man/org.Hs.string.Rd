@@ -4,7 +4,7 @@
 \title{Human functional protein association network from STRING (version 10).}
 
 \usage{
-org.Hs.string <- uRDataLoader(RData='org.Hs.string')
+org.Hs.string <- dRDataLoader(RData='org.Hs.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Hs.string <- uRDataLoader(RData='org.Hs.string')
+org.Hs.string <- dRDataLoader(RData='org.Hs.string')
 org.Hs.string
 }

@@ -5,7 +5,7 @@
 
 
 \usage{
-ig.HPMI <- uRDataLoader(RData='ig.HPMI')
+ig.HPMI <- dRDataLoader(RData='ig.HPMI')
 }
 
 \description{
@@ -28,6 +28,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-ig.HPMI <- uRDataLoader(RData='ig.HPMI')
+ig.HPMI <- dRDataLoader(RData='ig.HPMI')
 ig.HPMI
 }
