@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Ce.egGOMF <- dRDataLoader(RData='org.Ce.egGOMF')
+org.Ce.egGOMF <- uRDataLoader(RData='org.Ce.egGOMF')
 }
 
 \description{
@@ -30,6 +30,6 @@ Ashburner et al. (2000) Gene ontology: tool for the unification of biology. \emp
 \keyword{datasets}
 
 \examples{
-org.Ce.egGOMF <- dRDataLoader(RData='org.Ce.egGOMF')
+org.Ce.egGOMF <- uRDataLoader(RData='org.Ce.egGOMF')
 names(org.Ce.egGOMF)
 }

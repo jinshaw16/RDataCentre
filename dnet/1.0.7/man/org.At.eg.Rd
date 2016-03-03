@@ -5,7 +5,7 @@
 
 
 \usage{
-org.At.eg <- dRDataLoader(RData='org.At.eg')
+org.At.eg <- uRDataLoader(RData='org.At.eg')
 }
 
 \description{
@@ -26,7 +26,7 @@ Maglott et al. (2011) Entrez Gene: gene-centered information at NCBI. \emph{Nucl
 \keyword{datasets}
 
 \examples{
-org.At.eg <- dRDataLoader(RData='org.At.eg')
+org.At.eg <- uRDataLoader(RData='org.At.eg')
 names(org.At.eg)
 org.At.eg$gene_info[1:5,]
 }

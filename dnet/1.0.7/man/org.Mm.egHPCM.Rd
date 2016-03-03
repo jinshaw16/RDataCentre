@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egHPCM <- dRDataLoader(RData='org.Mm.egHPCM')
+org.Mm.egHPCM <- uRDataLoader(RData='org.Mm.egHPCM')
 }
 
 \description{
@@ -29,6 +29,6 @@ Sayers et al. (2011) Database resources of the National Center for Biotechnology
 \keyword{datasets}
 
 \examples{
-org.Mm.egHPCM <- dRDataLoader(RData='org.Mm.egHPCM')
+org.Mm.egHPCM <- uRDataLoader(RData='org.Mm.egHPCM')
 names(org.Mm.egHPCM)
 }

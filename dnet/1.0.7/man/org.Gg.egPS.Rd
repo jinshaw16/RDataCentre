@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Gg.egPS <- dRDataLoader(RData='org.Gg.egPS')
+org.Gg.egPS <- uRDataLoader(RData='org.Gg.egPS')
 }
 
 \description{
@@ -30,6 +30,6 @@ Fang et al. (2013) A daily-updated tree of (sequenced) life as a reference for g
 \keyword{datasets}
 
 \examples{
-org.Gg.egPS <- dRDataLoader(RData='org.Gg.egPS')
+org.Gg.egPS <- uRDataLoader(RData='org.Gg.egPS')
 names(org.Gg.egPS)
 }

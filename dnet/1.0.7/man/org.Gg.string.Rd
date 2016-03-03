@@ -4,7 +4,7 @@
 \title{Chicken functional protein association network from STRING (version 10).}
 
 \usage{
-org.Gg.string <- dRDataLoader(RData='org.Gg.string')
+org.Gg.string <- uRDataLoader(RData='org.Gg.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Gg.string <- dRDataLoader(RData='org.Gg.string')
+org.Gg.string <- uRDataLoader(RData='org.Gg.string')
 org.Gg.string
 }

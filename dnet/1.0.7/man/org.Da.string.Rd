@@ -4,7 +4,7 @@
 \title{Zebrafish functional protein association network from STRING (version 10).}
 
 \usage{
-org.Da.string <- dRDataLoader(RData='org.Da.string')
+org.Da.string <- uRDataLoader(RData='org.Da.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Da.string <- dRDataLoader(RData='org.Da.string')
+org.Da.string <- uRDataLoader(RData='org.Da.string')
 org.Da.string
 }

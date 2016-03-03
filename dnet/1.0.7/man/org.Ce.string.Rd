@@ -4,7 +4,7 @@
 \title{C.elegans functional protein association network from STRING (version 10).}
 
 \usage{
-org.Ce.string <- dRDataLoader(RData='org.Ce.string')
+org.Ce.string <- uRDataLoader(RData='org.Ce.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Ce.string <- dRDataLoader(RData='org.Ce.string')
+org.Ce.string <- uRDataLoader(RData='org.Ce.string')
 org.Ce.string
 }

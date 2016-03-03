@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egGOCC <- dRDataLoader(RData='org.Mm.egGOCC')
+org.Mm.egGOCC <- uRDataLoader(RData='org.Mm.egGOCC')
 }
 
 \description{
@@ -29,6 +29,6 @@ Ashburner et al. (2000) Gene ontology: tool for the unification of biology. \emp
 \keyword{datasets}
 
 \examples{
-org.Mm.egGOCC <- dRDataLoader(RData='org.Mm.egGOCC')
+org.Mm.egGOCC <- uRDataLoader(RData='org.Mm.egGOCC')
 names(org.Mm.egGOCC)
 }

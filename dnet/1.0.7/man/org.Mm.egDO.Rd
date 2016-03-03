@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egDO <- dRDataLoader(RData='org.Mm.egDO')
+org.Mm.egDO <- uRDataLoader(RData='org.Mm.egDO')
 }
 
 \description{
@@ -31,6 +31,6 @@ Sayers et al. (2011) Database resources of the National Center for Biotechnology
 \keyword{datasets}
 
 \examples{
-org.Mm.egDO <- dRDataLoader(RData='org.Mm.egDO')
+org.Mm.egDO <- uRDataLoader(RData='org.Mm.egDO')
 names(org.Mm.egDO)
 }

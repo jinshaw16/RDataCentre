@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egHPPA <- dRDataLoader(RData='org.Mm.egHPPA')
+org.Mm.egHPPA <- uRDataLoader(RData='org.Mm.egHPPA')
 }
 
 \description{
@@ -30,6 +30,6 @@ Sayers et al. (2011) Database resources of the National Center for Biotechnology
 
 
 \examples{
-org.Mm.egHPPA <- dRDataLoader(RData='org.Mm.egHPPA')
+org.Mm.egHPPA <- uRDataLoader(RData='org.Mm.egHPPA')
 names(org.Mm.egHPPA)
 }

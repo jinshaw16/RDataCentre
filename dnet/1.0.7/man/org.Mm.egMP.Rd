@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egMP <- dRDataLoader(RData='org.Mm.egMP')
+org.Mm.egMP <- uRDataLoader(RData='org.Mm.egMP')
 }
 
 \description{
@@ -27,6 +27,6 @@ Smith et al. (2009) The Mammalian Phenotype Ontology: enabling robust annotation
 \keyword{datasets}
 
 \examples{
-org.Mm.egMP <- dRDataLoader(RData='org.Mm.egMP')
+org.Mm.egMP <- uRDataLoader(RData='org.Mm.egMP')
 names(org.Mm.egMP)
 }

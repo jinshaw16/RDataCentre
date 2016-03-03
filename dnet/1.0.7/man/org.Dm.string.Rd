@@ -4,7 +4,7 @@
 \title{Fruitfly functional protein association network from STRING (version 10).}
 
 \usage{
-org.Dm.string <- dRDataLoader(RData='org.Dm.string')
+org.Dm.string <- uRDataLoader(RData='org.Dm.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Dm.string <- dRDataLoader(RData='org.Dm.string')
+org.Dm.string <- uRDataLoader(RData='org.Dm.string')
 org.Dm.string
 }

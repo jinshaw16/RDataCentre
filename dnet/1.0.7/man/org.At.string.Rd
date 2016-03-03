@@ -4,7 +4,7 @@
 \title{Arabidopsis functional protein association network from STRING (version 10).}
 
 \usage{
-org.At.string <- dRDataLoader(RData='org.At.string')
+org.At.string <- uRDataLoader(RData='org.At.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.At.string <- dRDataLoader(RData='org.At.string')
+org.At.string <- uRDataLoader(RData='org.At.string')
 org.At.string
 }

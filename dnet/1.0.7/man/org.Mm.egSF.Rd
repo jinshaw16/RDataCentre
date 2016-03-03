@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Mm.egSF <- dRDataLoader(RData='org.Mm.egSF')
+org.Mm.egSF <- uRDataLoader(RData='org.Mm.egSF')
 }
 
 \description{
@@ -30,6 +30,6 @@ Andreeva et al. (2008) Data growth and its impact on the SCOP database: new deve
 \keyword{datasets}
 
 \examples{
-org.Mm.egSF <- dRDataLoader(RData='org.Mm.egSF')
+org.Mm.egSF <- uRDataLoader(RData='org.Mm.egSF')
 names(org.Mm.egSF)
 }

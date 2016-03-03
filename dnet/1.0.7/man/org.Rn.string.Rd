@@ -4,7 +4,7 @@
 \title{Rat functional protein association network from STRING (version 10).}
 
 \usage{
-org.Rn.string <- dRDataLoader(RData='org.Rn.string')
+org.Rn.string <- uRDataLoader(RData='org.Rn.string')
 }
 
 \description{
@@ -41,6 +41,6 @@ Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integ
 \keyword{datasets}
 
 \examples{
-org.Rn.string <- dRDataLoader(RData='org.Rn.string')
+org.Rn.string <- uRDataLoader(RData='org.Rn.string')
 org.Rn.string
 }
