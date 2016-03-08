@@ -1,15 +1,15 @@
-\name{org.Hs.egMsigdbC4CGN}
-\alias{org.Hs.egMsigdbC4CGN}
+\name{org.Hs.egMsigdbC2CPall}
+\alias{org.Hs.egMsigdbC2CPall}
 
-\title{Annotations of Human Entrez Genes (EG) by C4:CGN collections.}
+\title{Annotations of Human Entrez Genes (EG) by C2:CP collections.}
 
 
 \usage{
-org.Hs.egMsigdbC4CGN <- xRDataLoader(RData.customised='org.Hs.egMsigdbC4CGN')
+org.Hs.egMsigdbC2CPall <- xRDataLoader(RData.customised='org.Hs.egMsigdbC2CPall')
 }
 
 \description{
-This data is prepared based on the molecular signatures database (Msigdb; \url{http://www.broadinstitute.org/gsea/msigdb/index.jsp}). An R object that contains associations between Msigdb C4:CGN (cancer gene neighborhoods) gene sets and Human Entrez Genes. C4:CGN gene sets are defined by expression neighborhoods centered on 380 cancer-associated genes (see \url{http://www.ncbi.nlm.nih.gov/pubmed/14593198}).
+This data is prepared based on the molecular signatures database (Msigdb; \url{http://www.broadinstitute.org/gsea/msigdb/index.jsp}). An R object that contains associations between Msigdb C2:CPall (all pathways) gene sets and Human Entrez Genes. C2:CP gene sets are from the pathway databases, and usually are canonical representations of a biological process compiled by domain experts.
 }
 
 \value{
@@ -27,6 +27,6 @@ Subramanian et al. (2005) Gene set enrichment analysis: a knowledge-based approa
 \keyword{datasets}
 
 \examples{
-org.Hs.egMsigdbC4CGN <- xRDataLoader(RData.customised='org.Hs.egMsigdbC4CGN')
-names(org.Hs.egMsigdbC4CGN)
+org.Hs.egMsigdbC2CPall <- xRDataLoader(RData.customised='org.Hs.egMsigdbC2CPall')
+names(org.Hs.egMsigdbC2CPall)
 }
