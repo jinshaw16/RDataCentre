@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Human functional protein association network from STRING...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for org.Hs.string"><tr><td>org.Hs.string</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Human functional protein association network from STRING (version 10).</h2>
+
+<h3>Description</h3>
+
+<p>An igraph object that contains a functional protein association network in human. The network is extracted from the STRING database (version 10). Only those associations with medium confidence (score&gt;=0.4) are retained. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+org.Hs.string &lt;- xRDataLoader(RData='org.Hs.string')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an object of class &quot;igraph&quot; (see <a href="http://igraph.org/r/doc/aaa-igraph-package.html">http://igraph.org/r/doc/aaa-igraph-package.html</a>). It has attributes for both vertices and edges. 
+Below are attributes for the vertices:
+</p>
+
+<ul>
+<li><p><code>name</code>: unique id for the vertices
+</p>
+</li>
+<li><p><code>seqid</code>: protein seqid for the vertices
+</p>
+</li>
+<li><p><code>geneid</code>: Entrez geneid (if any) for the vertices
+</p>
+</li>
+<li><p><code>symbol</code>: gene symbol (if any) for the vertices
+</p>
+</li>
+<li><p><code>description</code>: gene description (if any) for the vertices        
+</p>
+</li></ul>
+
+<p>Below are attributes for the edges:
+</p>
+
+<ul>
+<li><p><code>neighborhood_score</code>: predictive score based on neighborhood data
+</p>
+</li>
+<li><p><code>fusion_score</code>: predictive score based on fusion data
+</p>
+</li>
+<li><p><code>cooccurence_score</code>: predictive score based on cooccurence data
+</p>
+</li>
+<li><p><code>coexpression_score</code>: predictive score based on coexpression
+</p>
+</li>
+<li><p><code>experimental_score</code>: predictive score based on experimental data
+</p>
+</li>
+<li><p><code>database_score</code>: predictive score based on database
+</p>
+</li>
+<li><p><code>textmining_score</code>: predictive score based on text mining
+</p>
+</li>
+<li><p><code>combined_score</code>: combined score from all above predictive scores
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Szklarczyk et al. (2015) STRING v10: protein-protein interaction networks, integrated over the tree of life. <em>Nucleic Acids Res</em>, 43:D447-52.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+org.Hs.string &lt;- xRDataLoader(RData='org.Hs.string')
+org.Hs.string
+</pre>
+
+
+</body></html>

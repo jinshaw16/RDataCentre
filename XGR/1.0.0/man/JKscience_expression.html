@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Gene expression datasets across four conditions (shared by...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for JKscience_expression"><tr><td>JKscience_expression</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gene expression datasets across four conditions (shared by 228 individuals) from Benjamin et al. (2014)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves 228 individuals with expression data for all four conditions/contexts, that is, in the naive state (CD14), after 2-hour LPS (LPS2), after 24-hour LPS (LPS24), and after exposure to IFN (IFN). Also included are the probe information and the demographics information about individuals. For genotype data for these individuals, please refer to <code>JKscience_genotype</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+JKscience_expression &lt;- xRDataLoader(RData.customised='JKscience_expression')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with 3 components:
+</p>
+
+<ul>
+<li><p><code>eContext</code>: a list of 4 components, each for one of four conditions/contexts (that is, &quot;CD14&quot;, &quot;LPS2&quot;, &quot;LPS24&quot; and &quot;IFN&quot;) and each containing a matrix of probes X individuals
+</p>
+</li>
+<li><p><code>probeInfo</code>: a list of 2 components, both storing probe information including their genomic locations. The component <code>JKscience_expression$probeInfo$Info</code> contains a data frame, the second <code>JKscience_expression$probeInfo$GR</code> is an object of class &quot;GRanges&quot;
+</p>
+</li>
+<li><p><code>demoInfo</code>: a data frame containing demographics information about individuals
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Fairfax et al. (2014). Innate immune activity conditions the effect of regulatory variants upon monocyte gene expression. <em>Science</em>, 343(6175):1246949.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+JKscience_expression &lt;- xRDataLoader(RData.customised='JKscience_expression')
+names(JKscience_expression)
+# for eContext
+str(JKscience_expression$eContext)
+dim(JKscience_expression$eContext$CD14)
+JKscience_expression$eContext$CD14[1:5, 1:5]
+# for probeInfo
+names(JKscience_expression$probeInfo)
+JKscience_expression$probeInfo$Info[1:5, ]
+JKscience_expression$probeInfo$GR
+# for demoInfo
+JKscience_expression$demoInfo[1:5, ]
+</pre>
+
+
+</body></html>

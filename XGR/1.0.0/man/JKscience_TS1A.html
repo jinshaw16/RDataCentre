@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Table S1A for differentially expressed genes from Benjamin et...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for JKscience_TS1A"><tr><td>JKscience_TS1A</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Table S1A for differentially expressed genes from Benjamin et al. (2014)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves 228 individuals with expression data for all four conditions, that is, in the naive state (Naive), after 2-hour LPS (LPS2), after 24-hour LPS (LPS24), and after exposure to IFN (IFN). Differential gene expression analysis was performed using the limma package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+JKscience_TS1A &lt;- xRDataLoader(RData.customised='JKscience_TS1A')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a data frame. It has the following columns: &quot;ArrayAddress&quot; (illuminaHumanv4), &quot;GeneID&quot; (Entrez GeneID), &quot;Symbol&quot; (gene symbol), &quot;Naive_average&quot; (average expression level for naive samples), &quot;LPS2_average&quot;, &quot;LPS24_average&quot;, &quot;IFN_average&quot;, &quot;logFC_LPS2_Naive&quot; (log-transformed fold changes for Naive divided by LPS2), &quot;fdr_LPS2_Naive&quot; (FDR for Naive compared to LPS2), &quot;logFC_LPS24_Naive&quot; and &quot;fdr_LPS24_Naive&quot;, &quot;logFC_INF24_Naive&quot; and &quot;fdr_INF24_Naive&quot;, &quot;logFC_LPS24_LPS2&quot; and &quot;fdr_LPS24_LPS2&quot;.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fairfax et al. (2014). Innate immune activity conditions the effect of regulatory variants upon monocyte gene expression. <em>Science</em>, 343(6175):1246949.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+JKscience_TS1A &lt;- xRDataLoader(RData.customised='JKscience_TS1A')
+JKscience_TS1A[1:5,]
+</pre>
+
+
+</body></html>

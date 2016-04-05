@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Human Entrez Genes (EG).</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for org.Hs.eg"><tr><td>org.Hs.eg</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Human Entrez Genes (EG).</h2>
+
+<h3>Description</h3>
+
+<p>An R object that contains Entrez Gene information for the human. This data is prepared based on <a href="ftp://ftp.ncbi.nih.gov/gene/DATA/gene_info.gz">ftp://ftp.ncbi.nih.gov/gene/DATA/gene_info.gz</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+org.Hs.eg &lt;- xRDataLoader(RData='org.Hs.eg')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an object of class &quot;EG&quot;, a list with following components:
+</p>
+
+<ul>
+<li><p><code>gene_info</code>: a matrix of nGene X 7 containing gene information, where nGene is the number of Entrez Genes, and the 7 columns are &quot;GeneID&quot;, &quot;Symbol&quot;, &quot;description&quot;, &quot;chromosome&quot;, &quot;map_location&quot;, &quot;Synonyms&quot; and &quot;dbXrefs&quot;
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Maglott et al. (2011) Entrez Gene: gene-centered information at NCBI. <em>Nucleic Acids Res</em>, 39:D52-57.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# not run
+org.Hs.eg &lt;- xRDataLoader(RData='org.Hs.eg')
+names(org.Hs.eg)
+org.Hs.eg$gene_info[1:5,]
+</pre>
+
+
+</body></html>

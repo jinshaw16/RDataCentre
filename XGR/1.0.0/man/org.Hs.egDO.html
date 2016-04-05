@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Annotations of Human Entrez Genes (EG) by Disease Ontology...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for org.Hs.egDO"><tr><td>org.Hs.egDO</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Annotations of Human Entrez Genes (EG) by Disease Ontology (DO).</h2>
+
+<h3>Description</h3>
+
+<p>An R object that contains associations between Disease Ontology terms and Human Entrez Genes. This data is first prepared based on <a href="http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw">http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw</a> and  <a href="http://dga.nubic.northwestern.edu/ajax/Download.ajax.php">http://dga.nubic.northwestern.edu/ajax/Download.ajax.php</a>, which results in annotations of Human Entrez Genes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+org.Hs.egDO &lt;- xRDataLoader(RData='org.Hs.egDO')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an object of class &quot;GS&quot;, a list with following components:
+</p>
+
+<ul>
+<li><p><code>set_info</code>: a matrix of nSet X 4 containing gene set information, where nSet is the number of gene sets (i.e. DO terms), and the 4 columns are &quot;setID&quot; (i.e. &quot;Term ID&quot;), &quot;name&quot; (i.e. &quot;Term Name&quot;), &quot;namespace&quot; and &quot;distance&quot;
+</p>
+</li>
+<li><p><code>gs</code>: a list of gene sets, each storing gene members thereof. Always, gene sets are identified by &quot;setID&quot; and gene members identified by &quot;Entrez ID&quot;
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Schriml et al. (2012) Disease Ontology: a backbone for disease semantic integration. <em>Nucleic Acids Res</em>, 40:D940-946.
+<br />
+Peng et al. (2012) The Disease and Gene Annotations (DGA): an annotation resource for human disease. <em>Nucleic Acids Res</em>, 41:D553-560.
+<br />
+Sayers et al. (2011) Database resources of the National Center for Biotechnology Information. <em>Nucleic Acids Res</em>, 39:D38-51.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+org.Hs.egDO &lt;- xRDataLoader(RData='org.Hs.egDO')
+names(org.Hs.egDO)
+</pre>
+
+
+</body></html>

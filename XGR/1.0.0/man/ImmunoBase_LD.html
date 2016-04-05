@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Linkage Disequilibrium (LD) of ImmunoBase lead SNPs according...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ImmunoBase_LD"><tr><td>ImmunoBase_LD</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Linkage Disequilibrium (LD) of ImmunoBase lead SNPs according to the 1000 Genomics Project data (phase 3)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves LD of ImmunoBase SNPs calculated by PLINK based on the 1000 Genomics Project data (phase 3).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ImmunoBase_LD &lt;- xRDataLoader(RData.customised='ImmunoBase_LD')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list of sparse Matrix of class &quot;dgCMatrix&quot;. Each list represents one of 5 super populations, containing sparse matrix of ImmunoBase lead SNPs (rows) and LD SNPs (columns). Non-zero values indicate r2 (only those no less than 0.8). The population include 5 super populations (&quot;AFR&quot;, &quot;AMR&quot;, &quot;EAS&quot;, &quot;EUR&quot;, &quot;SAS&quot;). Explanations for these super-population code can be found at <a href="http://www.1000genomes.org/faq/which-populations-are-part-your-study">http://www.1000genomes.org/faq/which-populations-are-part-your-study</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Malone et al. (2010) Modeling sample variables with an Experimental Factor Ontology. <em>Bioinformatics</em>, 26(8):1112-8.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ImmunoBase_LD &lt;- xRDataLoader(RData.customised='ImmunoBase_LD')
+names(ImmunoBase_LD)
+# view the few first data for European population (EUR)
+ImmunoBase_LD$EUR[1:50,1:30]
+</pre>
+
+
+</body></html>

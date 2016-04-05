@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Genotype datasets for 228 individuals from Benjamin et al....</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for JKscience_genotype"><tr><td>JKscience_genotype</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Genotype datasets for 228 individuals from Benjamin et al. (2014)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves 228 individuals with genotype data. These individuals also contain expression data for all four conditions/contexts; see <code>JKscience_expression</code>. Also included are the SNP information and the demographics information about individuals.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+JKscience_genotype &lt;- xRDataLoader(RData.customised='JKscience_genotype')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with 3 components:
+</p>
+
+<ul>
+<li><p><code>sGenotype</code>: an object of the dgCMatrix class (a sparse matrix of SNP X individuals). The possible values are '0' (carrying both major alleles), '1' (carrying heterogeneous alleles, one major allele and one minor allele), '2' (carrying both minor alleles), and 'NA' (missing data)
+</p>
+</li>
+<li><p><code>snpInfo</code>: a list of 2 components, both storing SNP information including their genomic locations. The component <code>JKscience_genotype$snpInfo$Info</code> contains a data frame, the second <code>JKscience_genotype$snpInfo$GR</code> is an object of class &quot;GRanges&quot;
+</p>
+</li>
+<li><p><code>demoInfo</code>: a data frame containing demographics information about individuals
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Fairfax et al. (2014). Innate immune activity conditions the effect of regulatory variants upon monocyte gene expression. <em>Science</em>, 343(6175):1246949.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+JKscience_genotype &lt;- xRDataLoader(RData.customised='JKscience_genotype')
+names(JKscience_genotype)
+# for sGenotype
+dim(JKscience_genotype$sGenotype)
+JKscience_genotype$sGenotype[1:5, 1:5]
+# for snpInfo
+names(JKscience_genotype$snpInfo)
+JKscience_genotype$snpInfo$Info[1:5, ]
+JKscience_genotype$snpInfo$GR
+# for demoInfo
+JKscience_genotype$demoInfo[1:5, ]
+</pre>
+
+
+</body></html>

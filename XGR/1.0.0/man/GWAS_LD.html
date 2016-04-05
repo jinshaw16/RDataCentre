@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Linkage Disequilibrium (LD) of GWAS Catalog SNPs according to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for GWAS_LD"><tr><td>GWAS_LD</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Linkage Disequilibrium (LD) of GWAS Catalog SNPs according to the 1000 Genomics Project data (phase 3)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves LD of GWAS Catalog SNPs calculated by PLINK based on the 1000 Genomics Project data (phase 3).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+GWAS_LD &lt;- xRDataLoader(RData='GWAS_LD')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list of sparse Matrix of class &quot;dgCMatrix&quot;. Each list represents one of 26 populations and 5 super populations, containing sparse matrix of GWAS Catalog SNPs (rows) and LD SNPs (columns). Non-zero values indicate r2 (only those no less than 0.8). The population include 5 super populations (&quot;AFR&quot;, &quot;AMR&quot;, &quot;EAS&quot;, &quot;EUR&quot;, &quot;SAS&quot;) and 26 populations (&quot;ACB&quot;, &quot;ASW&quot;, &quot;BEB&quot;, &quot;CDX&quot;, &quot;CEU&quot;, &quot;CHB&quot;, &quot;CHS&quot;, &quot;CLM&quot;, &quot;ESN&quot;, &quot;FIN&quot;, &quot;GBR&quot;, &quot;GIH&quot;, &quot;GWD&quot;, &quot;IBS&quot;, &quot;ITU&quot;, &quot;JPT&quot;, &quot;KHV&quot;, &quot;LWK&quot;, &quot;MSL&quot;, &quot;MXL&quot;, &quot;PEL&quot;, &quot;PJL&quot;, &quot;PUR&quot;, &quot;STU&quot;, &quot;TSI&quot;, &quot;YRI&quot;). Explanations for population code can be found at <a href="http://www.1000genomes.org/faq/which-populations-are-part-your-study">http://www.1000genomes.org/faq/which-populations-are-part-your-study</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Malone et al. (2010) Modeling sample variables with an Experimental Factor Ontology. <em>Bioinformatics</em>, 26(8):1112-8.
+<br />
+Welter et al. (2014) The NHGRI GWAS Catalog, a curated resource of SNP-trait associations. <em>Nucleic Acids Res</em>, 42(Database issue):D1001-6.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+GWAS_LD &lt;- xRDataLoader(RData='GWAS_LD')
+names(GWAS_LD)
+# view the few first data for Great British population (GBR)
+GWAS_LD$GBR[1:50,1:30]
+</pre>
+
+
+</body></html>

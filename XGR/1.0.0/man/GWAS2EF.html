@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Annotations of GWAS Catalog SNPs by Experimental Factor...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for GWAS2EF"><tr><td>GWAS2EF</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Annotations of GWAS Catalog SNPs by Experimental Factor Ontology (EF)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset involves GWAS Catalog SNPs and their traits mapped to Experimental Factor Ontology. This data is prepared based on <a href="https://www.ebi.ac.uk/gwas/api/search/downloads/alternative">https://www.ebi.ac.uk/gwas/api/search/downloads/alternative</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+GWAS2EF &lt;- xRDataLoader(RData='GWAS2EF')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a sparse Matrix of class &quot;dgCMatrix&quot;, with the columns for Experimental Factor Ontology terms and rows for GWAS SNPs.
+</p>
+
+
+<h3>References</h3>
+
+<p>Malone et al. (2010) Modeling sample variables with an Experimental Factor Ontology. <em>Bioinformatics</em>, 26(8):1112-8.
+<br />
+Welter et al. (2014) The NHGRI GWAS Catalog, a curated resource of SNP-trait associations. <em>Nucleic Acids Res</em>, 42(Database issue):D1001-6.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+GWAS2EF &lt;- xRDataLoader(RData='GWAS2EF')
+GWAS2EF[1:10, 1:33]
+</pre>
+
+
+</body></html>
