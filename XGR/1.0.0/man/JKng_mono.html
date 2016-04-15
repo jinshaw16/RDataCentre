@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Table S1 and S2 for cis-eQTL and trans-eQTL in monocytes from...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for JKng_mono"><tr><td>JKng_mono</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Table S1 and S2 for cis-eQTL and trans-eQTL in monocytes from Benjamin et al. (2012)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset includes cell type–specific cis and trans expression quantitative trait loci (eQTLs) identified in monocytes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+JKng_mono &lt;- xRDataLoader(RData.customised='JKng_mono')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with two entries, 'cis' for cis-eQTLs, 'trans' for trans-eQTLs. Each entry  is a data frame with the following columns: &quot;SNP&quot; (dbSNP), &quot;Gene&quot; (gene symbol), &quot;BETA&quot;, &quot;T&quot; (test statistics), &quot;P&quot; (p-values).
+</p>
+
+
+<h3>References</h3>
+
+<p>Fairfax et al. (2012). Genetics of gene expression in primary immune cells identifies cell type–specific master regulators and roles of HLA alleles. <em>Nature Genetics</em>, 44(5):502–510.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+JKng_mono &lt;- xRDataLoader(RData.customised='JKng_mono')
+str(JKng_mono)
+names(JKng_mono)
+JKng_mono$cis[1:5,]
+JKng_mono$trans[1:5,]
+</pre>
+
+
+</body></html>
