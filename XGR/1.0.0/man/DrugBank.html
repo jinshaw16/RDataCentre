@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Drugs and their target genes from DrugBank.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for DrugBank"><tr><td>DrugBank</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Drugs and their target genes from DrugBank.</h2>
+
+<h3>Description</h3>
+
+<p>An R object that contains drugs and their target genes. This data is prepared based on <a href="http://www.drugbank.ca/system/downloads/current/drugbank.xml.zip">http://www.drugbank.ca/system/downloads/current/drugbank.xml.zip</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+DrugBank &lt;- xRDataLoader(RData='DrugBank')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an data frame with columns that can be grouped into following groups:
+</p>
+
+<ul>
+<li><p>columns of linking drugs to targets: &quot;drug_id&quot;, &quot;UniProtKB_AC&quot;, &quot;action&quot;
+</p>
+</li>
+<li><p>columns of info about genes: &quot;GeneID&quot;, &quot;Symbol&quot;, &quot;description&quot;
+</p>
+</li>
+<li><p>columns of info about drugs: &quot;drug_type&quot;, &quot;name&quot;, &quot;synonyms&quot;, &quot;indication&quot;, &quot;pharmacology&quot;, &quot;mechanism_of_action&quot;, &quot;toxicity&quot;, &quot;biotransformation&quot;, &quot;groups&quot;, &quot;affected_organisms&quot;, &quot;ATC_code&quot;
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Law et al. (2014) DrugBank 4.0: Shedding new light on drug metabolism. <em>Nucleic Acids Res</em>, 42:D1091-7.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# not run
+DrugBank &lt;- xRDataLoader(RData='DrugBank')
+colnames(DrugBank)
+# linking drugs to targets
+DrugBank[1:5, 1:3]
+# info about genes
+DrugBank[1:5, 4:6]
+# drug types
+table(DrugBank$drug_type)
+# drug groups
+table(DrugBank$groups)
+# find drugs used to treat Ankylosing Spondylitis (AS)
+ind &lt;- grep('ankylosing',DrugBank$indication, ignore.case=T, perl=T)
+unique(DrugBank$drug_id[ind])
+# find approved or experimental drugs used to treat AS
+ind1 &lt;- grep('ankylosing',DrugBank$indication, ignore.case=T, perl=T)
+ind2 &lt;- grep('approved|experimental',DrugBank$groups, ignore.case=T, perl=T)
+ind &lt;- intersect(ind1, ind2)
+unique(DrugBank$drug_id[ind])
+## also find AS approved or experimental drug target genes
+unique(DrugBank[ind, c("GeneID","Symbol","description")])
+</pre>
+
+
+</body></html>
