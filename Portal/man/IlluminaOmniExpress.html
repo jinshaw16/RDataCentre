@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Illumina HumanOmniExpress-12 v1.0 annotation data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for IlluminaOmniExpress"><tr><td>IlluminaOmniExpress</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Illumina HumanOmniExpress-12 v1.0 annotation data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains annotation data for the Illumina HumanOmniExpress-12 v1.0 BeadChip array platform for genome-wide association studies.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+IlluminaOmniExpress &lt;- xRDataLoader(RData='IlluminaOmniExpress')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with 2 components:
+</p>
+
+<ul>
+<li><p><code>Info</code>: a data frame
+</p>
+</li>
+<li><p><code>GR</code>: an object of class &quot;GRanges&quot;
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+IlluminaOmniExpress &lt;- xRDataLoader(RData='IlluminaOmniExpress')
+str(IlluminaOmniExpress)
+IlluminaOmniExpress$Info[1:10,]
+IlluminaOmniExpress$GR
+</pre>
+
+
+</body></html>

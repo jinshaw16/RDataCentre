@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Annotations of Human Entrez Genes (EG) by domain...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for org.Hs.egSF"><tr><td>org.Hs.egSF</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Annotations of Human Entrez Genes (EG) by domain superfamilies (SF).</h2>
+
+<h3>Description</h3>
+
+<p>An R object that contains domain superfamily information for Human Entrez Genes. This data is prepared based on SUPERFAMILY database, which provides SCOP domain architecture assignments to all completely sequenced genomes including eukaryotic genomes. The domain architecture for an Entrez gene is the protein product with the longest length of amino acids. Thus, domain superfamily information for Human Entrez gene is a list of domain superfamilies (excluding unknown gap) appearing in its domain architecture. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+org.Hs.egSF &lt;- xRDataLoader(RData='org.Hs.egSF')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an object of class &quot;GS&quot;, a list with following components:
+</p>
+
+<ul>
+<li><p><code>set_info</code>: a matrix of nSet X 4 containing gene set information, where nSet is the number of gene sets (i.e. SCOP domain superfamilies). The 4 columns are &quot;setID&quot; (i.e. &quot;SCOP domain identifier&quot;), &quot;name&quot; (i.e. &quot;SCOP domain description&quot;), &quot;namespace&quot; (i.e.  &quot;SCOP domain level&quot;) and &quot;distance&quot; (i.e.  &quot;SCOP domain classification&quot;).
+
+</p>
+</li>
+<li><p><code>gs</code>: a list of gene sets, each storing gene members thereof. Always, gene sets are identified by &quot;setID&quot; and gene members identified by &quot;Entrez ID&quot;
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Morais et al. (2011) SUPERFAMILY 1.75 including a domain-centric gene ontology method. <em>Nucleic Acids Res</em>, 39(Database issue):D427-34.
+<br />
+Andreeva et al. (2008) Data growth and its impact on the SCOP database: new developments. <em>Nucleic Acids Res</em>, 36(Database issue):D419-425
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+org.Hs.egSF &lt;- xRDataLoader(RData='org.Hs.egSF')
+names(org.Hs.egSF)
+</pre>
+
+
+</body></html>

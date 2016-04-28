@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Illumina HumanHT-12 v4 annotation data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for IlluminaHumanHT"><tr><td>IlluminaHumanHT</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Illumina HumanHT-12 v4 annotation data</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains annotation data for the Illumina HumanHT-12 v4 BeadChip gene expression array platform.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+IlluminaHumanHT &lt;- xRDataLoader(RData='IlluminaHumanHT')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with 2 components:
+</p>
+
+<ul>
+<li><p><code>Info</code>: a data frame. Notably, the column 'Probematch' of 1 indicates a probe sequence is uniquely mapped to genomic location
+</p>
+</li>
+<li><p><code>GR</code>: an object of class &quot;GRanges&quot;, storing only those probes uniquely mapped to autosomal genomic locations
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+IlluminaHumanHT &lt;- xRDataLoader(RData='IlluminaHumanHT')
+str(IlluminaHumanHT)
+IlluminaHumanHT$Info[1:10,]
+IlluminaHumanHT$GR
+</pre>
+
+
+</body></html>

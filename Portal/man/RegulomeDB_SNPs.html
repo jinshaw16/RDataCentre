@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: RegulomeDB SNPs restricted to GWAS SNPs and their LD SNPs...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for RegulomeDB_SNPs"><tr><td>RegulomeDB_SNPs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RegulomeDB SNPs restricted to GWAS SNPs and their LD SNPs (hg19)</h2>
+
+<h3>Description</h3>
+
+<p>An R object that contains RegulomeDB SNPs (together with genomic locations; hg19) but are restricted to those in GWAS Catalogs and ImmunoBase (GWAS SNPs) and their LD SNPs based on the phase 3 1000 Genomics Project data.</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+RegulomeDB_SNPs &lt;- xRDataLoader(RData.customised='RegulomeDB_SNPs')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>an object of class &quot;GRanges&quot;.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+RegulomeDB_SNPs &lt;- xRDataLoader(RData.customised='RegulomeDB_SNPs')
+RegulomeDB_SNPs
+# the first 5 rows of metadata
+mcols(RegulomeDB_SNPs)[1:5,]
+</pre>
+
+
+</body></html>
