@@ -12,7 +12,7 @@ This dataset includes cell type–specific cis and trans expression quantitative
 }
 
 \value{
-    a list with two entries, 'cis' for cis-eQTLs, 'trans' for trans-eQTLs. Each entry  is a data frame with the following columns: "SNP" (dbSNP), "Gene" (gene symbol), "BETA", "T" (test statistics), "P" (p-values), "FDR" (FDR).
+    a list with two entries, 'cis' for cis-eQTLs, 'trans' for trans-eQTLs. Each entry is a data frame with the following columns: "SNP" (dbSNP), "Gene" (gene symbol), "BETA", "T" (test statistics), "P" (p-values), "FDR" (FDR).
 }
 
 \references{
