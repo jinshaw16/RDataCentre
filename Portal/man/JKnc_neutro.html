@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Table S1 and S3 for cis-eQTL and trans-eQTL in neutrophils...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for JKnc_neutro"><tr><td>JKnc_neutro</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Table S1 and S3 for cis-eQTL and trans-eQTL in neutrophils from Naranbhai et al. (2015)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset includes cell type–specific cis and trans expression quantitative trait loci (eQTLs) identified in neutrophils.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+JKnc_neutro &lt;- xRDataLoader(RData.customised='JKnc_neutro')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with two entries, 'cis' for cis-eQTLs, 'trans' for trans-eQTLs. Each entry  is a data frame with the following columns: &quot;SNP&quot; (dbSNP), &quot;Gene&quot; (gene symbol), &quot;BETA&quot;, &quot;T&quot; (test statistics), &quot;P&quot; (p-values), &quot;FDR&quot; (FDR).
+</p>
+
+
+<h3>References</h3>
+
+<p>Naranbhai et al. (2015). Genomic modulators of gene expression in human neutrophils. <em>Nature Communications</em>, 7(6):7545.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+JKnc_neutro &lt;- xRDataLoader(RData.customised='JKnc_neutro')
+str(JKnc_neutro)
+names(JKnc_neutro)
+JKnc_neutro$cis[1:5,]
+JKnc_neutro$trans[1:5,]
+</pre>
+
+
+</body></html>

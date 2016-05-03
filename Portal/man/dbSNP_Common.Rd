@@ -1,7 +1,7 @@
 \name{dbSNP_Common}
 \alias{dbSNP_Common}
 
-\title{Common SNP from dbSNP (version 146) plus GWAS SNPs and their LD SNPs (hg19)}
+\title{Common SNPs from dbSNP (version 146) plus GWAS SNPs and their LD SNPs (hg19)}
 
 \usage{
 dbSNP_Common <- xRDataLoader(RData.customised='dbSNP_Common')
