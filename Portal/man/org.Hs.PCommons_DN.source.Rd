@@ -4,7 +4,7 @@
 \title{Human protein interaction directed network for each data source from Pathway Commons (version 7).}
 
 \usage{
-org.Hs.PCommons_DN.source <- xRDataLoader(RData.customised='org.Hs.PCommons_DN.source')
+org.Hs.PCommons_DN.source <- uRDataLoader(RData.customised='org.Hs.PCommons_DN.source')
 }
 
 \description{
@@ -38,7 +38,7 @@ Cerami et al. (2011) Pathway Commons, a web resource for biological pathway data
 \keyword{datasets}
 
 \examples{
-org.Hs.PCommons_DN.source <- xRDataLoader(RData.customised='org.Hs.PCommons_DN.source')
+org.Hs.PCommons_DN.source <- uRDataLoader(RData.customised='org.Hs.PCommons_DN.source')
 names(org.Hs.PCommons_DN.source)
 org.Hs.PCommons_DN.source$KEGG
 }

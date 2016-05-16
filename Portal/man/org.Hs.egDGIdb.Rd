@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egDGIdb <- xRDataLoader(RData='org.Hs.egDGIdb')
+org.Hs.egDGIdb <- uRDataLoader(RData='org.Hs.egDGIdb')
 }
 
 \description{
@@ -27,6 +27,6 @@ Griffith et al. (2013) DGIdb: mining the druggable genome. \emph{Nature methods}
 \keyword{datasets}
 
 \examples{
-org.Hs.egDGIdb <- xRDataLoader(RData='org.Hs.egDGIdb')
+org.Hs.egDGIdb <- uRDataLoader(RData='org.Hs.egDGIdb')
 names(org.Hs.egDGIdb)
 }
