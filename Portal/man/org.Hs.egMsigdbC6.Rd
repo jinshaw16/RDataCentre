@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egMsigdbC6 <- uRDataLoader(RData.customised='org.Hs.egMsigdbC6')
+org.Hs.egMsigdbC6 <- xRDataLoader(RData.customised='org.Hs.egMsigdbC6')
 }
 
 \description{
@@ -27,6 +27,6 @@ Subramanian et al. (2005) Gene set enrichment analysis: a knowledge-based approa
 \keyword{datasets}
 
 \examples{
-org.Hs.egMsigdbC6 <- uRDataLoader(RData.customised='org.Hs.egMsigdbC6')
+org.Hs.egMsigdbC6 <- xRDataLoader(RData.customised='org.Hs.egMsigdbC6')
 names(org.Hs.egMsigdbC6)
 }

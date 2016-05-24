@@ -28,6 +28,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 
 
 \examples{
-org.Hs.egHPPA <- uRDataLoader(RData='org.Hs.egHPPA')
+org.Hs.egHPPA <- xRDataLoader(RData='org.Hs.egHPPA')
 names(org.Hs.egHPPA)
 }

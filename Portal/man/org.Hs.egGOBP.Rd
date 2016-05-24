@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egGOBP <- uRDataLoader(RData='org.Hs.egGOBP')
+org.Hs.egGOBP <- xRDataLoader(RData='org.Hs.egGOBP')
 }
 
 \description{
@@ -30,6 +30,6 @@ Ashburner et al. (2000) Gene ontology: tool for the unification of biology. \emp
 \keyword{datasets}
 
 \examples{
-org.Hs.egGOBP <- uRDataLoader(RData='org.Hs.egGOBP')
+org.Hs.egGOBP <- xRDataLoader(RData='org.Hs.egGOBP')
 names(org.Hs.egGOBP)
 }

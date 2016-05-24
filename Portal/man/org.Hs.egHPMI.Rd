@@ -5,7 +5,7 @@
 
 
 \usage{
-org.Hs.egHPMI <- uRDataLoader(RData='org.Hs.egHPMI')
+org.Hs.egHPMI <- xRDataLoader(RData='org.Hs.egHPMI')
 }
 
 \description{
@@ -27,6 +27,6 @@ Robinson et al. (2012) The Human Phenotype Ontology: a tool for annotating and a
 \keyword{datasets}
 
 \examples{
-org.Hs.egHPMI <- uRDataLoader(RData='org.Hs.egHPMI')
+org.Hs.egHPMI <- xRDataLoader(RData='org.Hs.egHPMI')
 names(org.Hs.egHPMI)
 }
