@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: GWAS Catalog variants associated with traits mappable to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for GWAS_dbSNP_IB"><tr><td>GWAS_dbSNP_IB</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>GWAS Catalog variants associated with traits mappable to immune diseases defined in ImmunoBase (hg19)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains GWAS Catalog variants variants associated with traits mappable to immune diseases defined in ImmunoBase. For each of 20 immune-diseases, its associated variants are stored.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+xRDataLoader(RData.customised='GWAS_dbSNP_IB')
+</pre>
+
+
+<h3>Value</h3>
+
+<p>a list with 5 components:
+</p>
+
+<ul>
+<li><p><code>disease</code>: a character of disease name
+</p>
+</li>
+<li><p><code>variants</code>: an object of class &quot;GRanges&quot;, storing genomic locations of associated variants plus their significance and odd ratios
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+GWAS_dbSNP_IB &lt;- xRDataLoader(RData.customised='GWAS_dbSNP_IB')
+names(GWAS_dbSNP_IB)
+str(GWAS_dbSNP_IB$AS)
+GWAS_dbSNP_IB$AS$disease
+GWAS_dbSNP_IB$AS$variants
+</pre>
+
+
+</body></html>
