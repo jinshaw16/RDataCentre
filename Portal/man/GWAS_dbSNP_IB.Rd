@@ -8,7 +8,7 @@ xRDataLoader(RData.customised='GWAS_dbSNP_IB')
 }
 
 \description{
-This dataset contains GWAS Catalog variants variants associated with traits mappable to immune diseases defined in ImmunoBase. For each of 20 immune diseases, its associated variants are stored.
+This dataset contains GWAS Catalog variants associated with traits that are mappable to immune diseases defined in ImmunoBase. For each of 20 immune diseases, its associated variants are stored as an object of class "GRanges".
 }
 
 \value{
